@@ -4,7 +4,7 @@
       width="150px" alt="NFT Logo">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavQrypto"
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="show()">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavQrypto">
@@ -68,7 +68,7 @@
     <ul class="nav justify-content-center">
       <li class="nav-item">
         <a class="nav-link active" href="#">
-          <img src="../assets/AssetsNFTmaQer/images/nfts/3.png" class="rounded-circle" width="60px" alt="">
+          <img src="../assets/AssetsNFTmaQer/images/nfts/3.png" class="rounded-circle" [width]="largeur" alt="">
         </a>
       </li>
       <li class="nav-item">
