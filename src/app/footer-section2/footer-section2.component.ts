@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterSection2Component implements OnInit {
 
+  visibility = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  show() {
+      this.visibility = !this.visibility
   }
 
 }
