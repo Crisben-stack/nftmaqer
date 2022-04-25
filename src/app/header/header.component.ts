@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   visibility = false;
 
-  largeur = 60;
+  width = 60;
 
   constructor() { }
 
@@ -18,6 +18,14 @@ export class HeaderComponent implements OnInit {
 
   show() {
     this.visibility = !this.visibility;
+  }
+
+  onMouseOver(){
+      this.width += 20;
+  }
+
+  onMouseLeave() {
+      this.width = 60;
   }
 
 }
